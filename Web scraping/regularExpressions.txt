@@ -1,0 +1,83 @@
+﻿Some examples with Regular Expressions
+
+######## Search ##########################
+
+Search for simple letter sequences: sim
+
+
+
+
+
+
+####### Character classes ###############
+
+Search for "book" or "look": [bl]ook
+
+
+
+
+
+
+####### Arbitrary character ##############
+
+Search for an arbitrary character: .ch
+
+
+
+
+
+
+####### The . ###########################
+
+Search for ".": \.
+
+
+
+
+
+
+####### Shorthand Character Classes #####
+
+Search for an arbitrary digit 0-9: \d
+Search for blank spaces: \s
+
+
+
+
+
+
+####### Repetitions ##################
+
+Search for a 0, 0 or more characters or blanks and another 0: 0[a-z\s]*0
+
+
+
+
+
+
+####### Groups #########################
+
+Search for "4" or "5" and replace by twice the detected character: replace ([45]) by \1\1
+
+
+
+
+
+
+#########################################
+
+What does this regular expression refer to?
+\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b
+
+
+
+
+
+
+#########################################
+
+A lot more is possible, some links to work them: 
+
+http://www.regular-expressions.info/ - For future reference
+http://www.txt2re.com/ - Regular Expression Generator
+http://regexr.com/ - "Online tool to learn, build, & test Regular Expressions"
